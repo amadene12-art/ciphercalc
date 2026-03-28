@@ -613,3 +613,11 @@ margin:auto;
   border-color: rgba(255, 92, 122, 0.7);
   box-shadow: 0 0 0 4px rgba(255, 92, 122, 0.12);
 }
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
