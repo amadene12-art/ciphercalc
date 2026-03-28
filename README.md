@@ -1,5 +1,7 @@
 # CipherCalc
 
+Live Demo: https://amadene12-art.github.io/ciphercalc/
+
 CipherCalc is a web application for working with classical encryption algorithms.
 The project demonstrates cryptographic concepts through a simple and interactive interface.
 
