@@ -532,7 +532,6 @@ margin:auto;
 .algo-card p {
   margin: 0;
 }
-/* DROPDOWN */
 .dropdown {
   position: relative;
 }
@@ -549,10 +548,10 @@ margin:auto;
 .dropdown__toggle {
   background: none;
   border: 1px solid transparent;
-  color:var(--muted);
+  color: var(--muted);
   font: inherit;
   cursor: pointer;
-  padding: 10x 12px;
+  padding: 10px 12px;
   border-radius: 999px;
   transition: .2s ease;
 }
@@ -568,7 +567,6 @@ margin:auto;
   border-color: rgba(122,162,255,.35);
   background: rgba(122,162,255,.10);
 }
-
 .dropdown__menu {
   position: absolute;
   top: calc(100% + 6px);
