@@ -71,6 +71,16 @@ js-app.js         — application logic
 
 ---
 
+## 📸 Screenshots
+
+![Main Page](assets/images/main.png)
+![Caesar Cipher](assets/images/caesar.png)
+![Polybius](assets/images/polybius.png)
+![Vigenere](assets/images/vigenere.png)
+![Atbash](assets/images/atbash.png)
+
+---
+
 ## ⚙️ Getting Started
 
 No build required.
