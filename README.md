@@ -2,7 +2,6 @@
 ![CSS](https://img.shields.io/badge/CSS-3-blue)
 ![JavaScript](https://img.shields.io/badge/JavaScript-Vanilla-yellow)
 ![Status](https://img.shields.io/badge/status-active-success)
-
 # CipherCalc
 
 Live Demo: https://amadene12-art.github.io/ciphercalc/
