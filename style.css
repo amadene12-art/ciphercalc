@@ -548,11 +548,25 @@ margin:auto;
 
 .dropdown__toggle {
   background: none;
-  border: none;
-  color: inherit;
+  border: 1px solid transparent;
+  color:var(--muted);
   font: inherit;
   cursor: pointer;
-  padding: 0;
+  padding: 10x 12px;
+  border-radius: 999px;
+  transition: .2s ease;
+}
+
+.dropdown__toggle:hover {
+  border-color: var(--line);
+  color: var(--text);
+  transform: translateY(-1px);
+}
+
+.dropdown__toggle.is-active {
+  color: var(--text);
+  border-color: rgba(122,162,255,.35);
+  background: rgba(122,162,255,.10);
 }
 
 .dropdown__menu {
