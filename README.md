@@ -11,6 +11,15 @@ The project demonstrates cryptographic concepts through a simple and interactive
 
 ---
 
+## Why this project?
+
+This project was created to:
+- demonstrate understanding of classical cryptography
+- practice working with text processing and algorithms
+- build an interactive frontend application without frameworks
+
+---
+
 ## Features
 
 * Text encryption and decryption
