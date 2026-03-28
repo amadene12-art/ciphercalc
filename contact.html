@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CipherCalc — Контакты</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="js-app.js"></script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a class="logo" href="index.html">Cipher<span>Calc</span></a>
+
+      <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav" id="nav">
+  <a class="nav__link active" href="index.html">Главная</a>
+
+  <div class="dropdown">
+    <button class="nav__link dropdown__toggle">
+      Шифраторы ▾
+    </button>
+
+    <div class="dropdown__menu">
+      <a href="caesar.html">Шифр Цезаря</a>
+      <a href="polybius.html">Квадрат Полибия</a>
+      <a href="vigenere.html">Шифр Виженера</a>
+      <a href="atbash.html">Шифр Атбаш</a>
+    </div>
+  </div>
+
+  <a class="nav__link" href="about.html">О проекте</a>
+  <a class="nav__link" href="contact.html">Контакты</a>
+</nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="pagehead">
+      <h1>Контакты</h1>
+      <p class="muted">Форма обратной связи для вопросов и предложений по проекту.</p>
+    </section>
+
+    <section class="grid grid--2">
+      <article class="card">
+        <h2 class="card__title">Связаться</h2>
+
+        <form id="contactForm" class="form" novalidate>
+          <div class="field">
+            <label for="name">Имя</label>
+            <input id="name" class="input" type="text" placeholder="Ваше имя" />
+            <div class="error" id="errName"></div>
+          </div>
+
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" class="input" type="email" placeholder="name@example.com" />
+            <div class="error" id="errEmail"></div>
+          </div>
+
+          <div class="field">
+            <label for="message">Сообщение</label>
+            <textarea id="message" class="textarea" rows="6" placeholder="Напишите сообщение..."></textarea>
+            <div class="error" id="errMsg"></div>
+          </div>
+
+          <button class="btn" type="submit">Отправить</button>
+        </form>
+      </article>
+
+      <article class="card">
+        <h2 class="card__title">Информация</h2>
+        <p class="muted">
+          Здесь можно разместить контактные данные автора проекта, ссылки на GitHub,
+          почту для связи или краткое описание назначения формы.
+        </p>
+
+        <div class="divider"></div>
+
+        <p class="muted small">
+          Сейчас отправка формы работает как демонстрация интерфейса:
+          после успешной проверки полей показывается уведомление.
+        </p>
+      </article>
+    </section>
+  </main>
+
+  <div class="toast" id="toast" aria-live="polite" aria-atomic="true"></div>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span class="muted small">© CipherCalc 2026</span>
+      <a class="muted small link" href="index.html">К калькулятору</a>
+    </div>
+  </footer>
+</body>
+</html>

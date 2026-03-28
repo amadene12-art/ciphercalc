@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CipherCalc — Шифр Атбаш</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="js-app.js"></script>
+</head>
+
+<body data-algo="atbash">
+  <header class="header">
+    <div class="container header__inner">
+      <a class="logo" href="index.html">Cipher<span>Calc</span></a>
+
+      <button class="burger" id="burger" aria-label="Открыть меню">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav" id="nav">
+  <a class="nav__link active" href="index.html">Главная</a>
+
+  <div class="dropdown">
+    <button class="nav__link dropdown__toggle">
+      Шифраторы ▾
+    </button>
+
+    <div class="dropdown__menu">
+      <a href="caesar.html">Шифр Цезаря</a>
+      <a href="polybius.html">Квадрат Полибия</a>
+      <a href="vigenere.html">Шифр Виженера</a>
+      <a href="atbash.html">Шифр Атбаш</a>
+    </div>
+  </div>
+
+  <a class="nav__link" href="about.html">О проекте</a>
+  <a class="nav__link" href="contact.html">Контакты</a>
+</nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="hero__text">
+        <h1>Шифр Атбаш</h1>
+        <span class="badge">Интерактивная демонстрация</span>
+
+        <p class="muted" style="margin-top: 18px;">
+          Шифр Атбаш — простой симметричный метод, в котором алфавит
+          разворачивается в обратном порядке: первая буква заменяется на последнюю,
+          вторая — на предпоследнюю и так далее. Шифрование и расшифровка совпадают.
+        </p>
+      </div>
+
+      <div class="tools-layout">
+        <div class="card">
+          <h2 class="card__title">Калькулятор</h2>
+
+          <!-- режима нет, он не нужен -->
+          
+          <div class="field">
+            <label for="inputText">Исходный текст</label>
+            <textarea
+              id="inputText"
+              class="textarea"
+              rows="5"
+              placeholder="Введите текст..."
+            ></textarea>
+          </div>
+
+          <div class="row row--wrap">
+            <button class="btn" id="run" type="button">Выполнить</button>
+            <button class="btn btn--ghost" id="swap" type="button">Поменять поля</button>
+            <button class="btn btn--danger" id="clear" type="button">Очистить</button>
+          </div>
+
+          <div class="field">
+            <label for="outputText">Результат</label>
+            <textarea
+              id="outputText"
+              class="textarea"
+              rows="5"
+              placeholder="Результат появится здесь..."
+              readonly
+            ></textarea>
+          </div>
+
+          <div class="row">
+            <button class="btn btn--ghost" id="copy" type="button">Скопировать</button>
+          </div>
+
+          <div class="divider"></div>
+
+          <p class="muted small">
+            Алгоритм симметричен: одна и та же операция используется
+            как для шифрования, так и для расшифровки.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="toast" id="toast"></div>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span class="muted small">© CipherCalc 2026</span>
+      <a class="muted small link" href="about.html">О проекте</a>
+    </div>
+  </footer>
+</body>
+</html>

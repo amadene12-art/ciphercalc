@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CipherCalc — О проекте</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="js-app.js"></script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a class="logo" href="index.html">Cipher<span>Calc</span></a>
+
+      <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav" id="nav">
+  <a class="nav__link active" href="index.html">Главная</a>
+
+  <div class="dropdown">
+    <button class="nav__link dropdown__toggle">
+      Шифраторы ▾
+    </button>
+
+    <div class="dropdown__menu">
+      <a href="caesar.html">Шифр Цезаря</a>
+      <a href="polybius.html">Квадрат Полибия</a>
+      <a href="vigenere.html">Шифр Виженера</a>
+      <a href="atbash.html">Шифр Атбаш</a>
+    </div>
+  </div>
+
+  <a class="nav__link" href="about.html">О проекте</a>
+  <a class="nav__link" href="contact.html">Контакты</a>
+</nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="pagehead">
+      <h1>О проекте</h1>
+      <p class="muted">
+  CipherCalc — веб-приложение для демонстрации классических методов шифрования.
+  Проект показывает работу популярных алгоритмов через простой и наглядный интерфейс.
+</p>
+    </section>
+
+    <section class="grid grid--2">
+      <article class="card">
+        <h2 class="card__title">Функциональность</h2>
+        <ul class="list">
+          <li>Шифрование и расшифровка текста по шифрам Цезаря, квадрата Полибия, Виженера, Атбаш.</li>
+          <li>Поддержка латиницы и кириллицы, сохранение регистра.</li>
+          <li>Случайный сдвиг и обмен полей.</li>
+          <li>Подбор сдвига (bruteforce) для просмотра всех вариантов.</li>
+          <li>Тост-уведомления и модальное окно.</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h2 class="card__title">Структура сайта</h2>
+        <div class="codebox">
+          <pre><code>index.html   — главная
+caesar.html - калькулятор шифра цезаря
+polybius.html - калькулятор квадрата полибия
+vigenere.html - калькулятор шифра виженера
+atbash.html - калькулятор шифра атбаш
+about.html   — подробная информация
+contact.html — контакты + форма
+style.css — стили и адаптив
+js-app.js     — интерактив и логика</code></pre>
+        </div>
+        <p class="muted small">
+          Все страницы используют общий header/menu и единый файл стилей.
+        </p>
+      </article>
+    </section>
+
+    <section class="card">
+      <h2 class="card__title">Короткая теория</h2>
+      <p>
+Классические методы шифрования основаны на преобразовании текста с использованием различных правил. 
+В данном проекте реализованы несколько подходов, отличающихся принципом работы:
+</p>
+
+<p>
+— <b>моноалфавитные шифры</b> (например, шифр Цезаря, Атбаш*), где используется фиксированный сдвиг букв;<br>
+— <b>полиалфавитные шифры</b> (например, шифр Виженера), в которых применяется ключевое слово для изменения сдвига;<br>
+— <b>координатные методы</b> (например, квадрат Полибия), где символы заменяются на координаты в таблице.
+</p>
+
+<p>
+*Шифр Атбаш отличается тем, что строится на зеркальном отображении алфавита: первая буква заменяется на последнюю, вторая — на предпоследнюю и так далее. 
+Благодаря этому шифрование и расшифровка выполняются одной и той же операцией.
+</p>
+
+<p>
+Каждый из этих методов демонстрирует разные подходы к защите информации: от простых и наглядных до более сложных и устойчивых к анализу.
+</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span class="muted small">© CipherCalc 2026</span>
+      <a class="muted small link" href="contact.html">Связаться</a>
+    </div>
+  </footer>
+</body>
+</html>

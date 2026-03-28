@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CipherCalc — Главная</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="js-app.js"></script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a class="logo" href="index.html">Cipher<span>Calc</span></a>
+
+      <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav" id="nav">
+  <a class="nav__link active" href="index.html">Главная</a>
+
+  <div class="dropdown">
+    <button class="nav__link dropdown__toggle">
+      Шифраторы ▾
+    </button>
+
+    <div class="dropdown__menu">
+      <a href="caesar.html">Шифр Цезаря</a>
+      <a href="polybius.html">Квадрат Полибия</a>
+      <a href="vigenere.html">Шифр Виженера</a>
+      <a href="atbash.html">Шифр Атбаш</a>
+    </div>
+  </div>
+
+  <a class="nav__link" href="about.html">О проекте</a>
+  <a class="nav__link" href="contact.html">Контакты</a>
+</nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero hero-center">
+
+<div class="hero__text center">
+
+<h1>CipherCalc</h1>
+
+<p class="muted">
+CipherCalc — веб-приложение для работы с классическими алгоритмами шифрования.
+Выберите метод, введите текст и мгновенно получите результат.
+</p>
+
+<p class="muted">
+Проект поддерживает несколько классических криптографических алгоритмов
+и может быть расширен новыми методами шифрования.
+</p>
+
+<div class="row row--wrap" style="margin-top: 18px; justify-content: center;">
+  <a class="btn" href="caesar.html">Начать с шифра Цезаря</a>
+  <a class="btn btn--ghost" href="about.html">О проекте</a>
+</div>
+
+</div>
+</section>
+    <section class="algorithms-preview">
+      <div class="section-head center">
+        <h2>Доступные алгоритмы</h2>
+        <p class="muted">
+          Выберите один из реализованных методов шифрования и перейдите к интерактивной демонстрации.
+        </p>
+      </div>
+
+      <div class="algo-grid">
+        <a class="algo-card" href="caesar.html">
+          <h3>Шифр Цезаря</h3>
+          <p class="muted">
+            Классический метод подстановки со сдвигом символов на заданное число позиций.
+          </p>
+        </a>
+
+        <a class="algo-card" href="polybius.html">
+          <h3>Квадрат Полибия</h3>
+          <p class="muted">
+            Шифрование текста через координаты символов в специальной таблице.
+          </p>
+        </a>
+
+        <a class="algo-card" href="vigenere.html">
+          <h3>Шифр Виженера</h3>
+          <p class="muted">
+            Многоалфавитный метод шифрования, использующий ключевое слово.
+          </p>
+        </a>
+
+        <a class="algo-card" href="atbash.html">
+          <h3>Шифр Атбаш</h3>
+          <p class="muted">
+            Простой зеркальный шифр, в котором алфавит разворачивается в обратном порядке.
+          </p>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span class="muted small">© CipherCalc 2026</span>
+      <a class="muted small link" href="about.html">О проекте</a>
+    </div>
+  </footer>
+</body>
+</html>
